@@ -19,3 +19,18 @@ let negInf = -infinity; //no son tan exactos los cálculos
 let notANumber = NaN; //
 
 
+// ------ Strings -------
+
+let cad1 = `En el mar`;
+let cad2 = "Acostado en el océano";
+let cad3 = 'Flotando en el océano'
+
+let saltoDeLinea = "Esta es la primera linea \nY esta la segunda"; 
+let tabu = "con la t hacemos tab \t";
+
+let concat = saltoDeLinea + " " + tabu;
+console.log(concat);
+
+//podemos hacer uso de template literals para incluir variables o operaciones dentro de una cadena
+let templateLit = `la mitad de 100 es ${100 / 2}`
+
