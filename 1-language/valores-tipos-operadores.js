@@ -55,11 +55,38 @@ let negFals = !negLog; //false
 let positivo = 3;
 let negativo = -positivo; // negativo ahora es -3
 
+// ----- Operadores Booleanos ----- 
+
 // en JS cualquier valor puede ser evaluado como verdadero o falso. 
 
+let bool1 = 3 > 2; //true; // utilizamos los operadores binarios < >
+let bool2 = 2 > 3; // false
 
 
+console.log("Granate" != "Rubí")
+// → true
+console.log("Perla" == "Amatista")
+// → false
+
+// ----- Operadores Lógicos ----- 
+
+// "significa Y" los 2 valores tienen que cumplirse para ser verdadero
+console.log(true && false)
+// → false
+console.log(true && true)
+// → true
 
 
+// significa "O" es verdadero si uno de los valores es verdadero
+console.log(false || true)
+// → true
+console.log(false || false)
+// → false
 
+// Operador ternario "?"- a ? b : c si el resultado es b cuando es verdadero y c cuando es falso
+
+console.log(true ? 1 : 2);
+// → 1
+console.log(false ? 1 : 2);
+// → 2
 
