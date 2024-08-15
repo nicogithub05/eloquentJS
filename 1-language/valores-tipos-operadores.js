@@ -90,3 +90,32 @@ console.log(true ? 1 : 2);
 console.log(false ? 1 : 2);
 // → 2
 
+// ------ Coerción de tipos ------- 
+
+// cuando se le da un valor incorrecto a javascript este tratará de convertirlo para hacer la operación efectiva (a veces hace cosas extrañas)
+
+console.log(8 * null)
+// → 0
+console.log("5" - 1)
+// → 4
+console.log("5" + 1)
+// → 51
+console.log("five" * 2)
+// → NaN
+console.log(false == 0)
+// → true
+
+// Cuando se aplica un operador al tipo de valor “incorrecto”, JavaScript convertirá silenciosamente ese valor al tipo que necesita, utilizando un conjunto de reglas que a menudo no son las que deseas o esperas. Esto se llama coerción de tipos. El null en la primera expresión se convierte en 0 y el "5" en la segunda expresión se convierte en 5 (de cadena a número). Sin embargo, en la tercera expresión, + intenta la concatenación de cadenas antes que la suma numérica, por lo que el 1 se convierte en "1" (de número a cadena)
+
+// para evitar coerción de tipos no deseadas utilizamos === o !==
+
+let exacIg = 1 === 1; // true - prueba si el valor y el tipo es igual al otro. 
+let noExacIg = 1 !== 2 // true - prueba si el valor no es exactamente igual; 
+
+// operador "|| devolverá el valor de su izquierda cuando ese valor pueda convertirse en true y devolverá el valor de su derecha de lo contrario."
+// devuelve el valor de la derecha solo si el de la izquierda es null o undefined
+console.log(null || "usuario")
+// → usuario
+console.log("Agnes" || "usuario")
+// → Agnes
+
